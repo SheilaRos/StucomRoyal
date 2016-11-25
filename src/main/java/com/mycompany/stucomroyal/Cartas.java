@@ -1,10 +1,18 @@
+package com.mycompany.stucomroyal;
 
-public class Cartas {
+
+public abstract class Cartas {
     
     private String nombre;
     private int costeElixir;
-
     private int nivelVida;
+
+    public Cartas(String nombre, int costeElixir, int nivelVida) {
+        this.nombre = nombre;
+        this.costeElixir = costeElixir;
+        this.nivelVida = nivelVida;
+    }
+    
 
     public int getNivelVida() {
         return nivelVida;
