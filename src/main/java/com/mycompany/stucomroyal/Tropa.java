@@ -6,5 +6,9 @@ public class Tropa extends Cartas{
         super(nombre, costeElixir, nivelVida);
         this.nivelAtaque = nivelAtaque;
     }
-    
+    public int getNivelAtaque() {return nivelAtaque;}
+    public void setNivelAtaque(int nivelAtaque) {this.nivelAtaque = nivelAtaque;}
+    @Override public int accionCarta() {
+       return nivelAtaque/2;
+    }
 }
