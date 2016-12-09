@@ -194,9 +194,13 @@ public class StucomRoyalAPP {
                    Hechizo cartaH = (Hechizo) cartas1.get(i);
                    //comprobamos el modo de la carta
                    if(cartaH.getModo().equals("ataque")){
-                       cartas2.get(i).setNivelVida(cartas2.get(i).getNivelVida() - cartaH.accionCarta());
+                       cartas2.get(0).setNivelVida(cartas2.get(0).getNivelVida() - cartaH.accionCarta());
+                       cartas2.get(1).setNivelVida(cartas2.get(1).getNivelVida() - cartaH.accionCarta());
+                       cartas2.get(2).setNivelVida(cartas2.get(2).getNivelVida() - cartaH.accionCarta());
                    }else{
-                       cartas1.get(i).setNivelVida(cartaH.getNivelVida() + cartaH.accionCarta());
+                       cartas1.get(0).setNivelVida(cartas1.get(0).getNivelVida() + cartaH.accionCarta());
+                       cartas1.get(1).setNivelVida(cartas1.get(1).getNivelVida() + cartaH.accionCarta());
+                       cartas1.get(2).setNivelVida(cartas1.get(2).getNivelVida() + cartaH.accionCarta());
                    }
                 }else if(cartas1.get(i).getClass()== Estructura.class){
                    Estructura cartaE = (Estructura) cartas1.get(i);
