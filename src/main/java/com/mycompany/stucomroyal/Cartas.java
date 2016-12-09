@@ -1,7 +1,7 @@
 package com.mycompany.stucomroyal;
 
 
-public abstract class Cartas {
+public abstract class Cartas implements Cloneable{
     private String nombre;
     private int costeElixir;
     private int nivelVida;
@@ -17,4 +17,12 @@ public abstract class Cartas {
     public String getNombre() {return nombre;}
     public void setNombre(String nombre) {this.nombre = nombre;}
     public abstract int accionCarta();
+    @Override
+    public String toString() {
+        return "Cartas{" + "nombre=" + nombre + ", costeElixir=" + costeElixir + ", nivelVida=" + nivelVida + '}';
+    }
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone(); //To change body of generated methods, choose Tools | Templates.
+    }
 }

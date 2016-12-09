@@ -15,4 +15,8 @@ public class Hechizo extends Cartas{
     @Override public int accionCarta() {
         return (nivelAlcance*2)/3;
     }
+    @Override
+    public String toString() {
+        return "Hechizo{" + "nombre=" + this.getNombre() + ", costeElixir=" + this.getCosteElixir() + ", nivelVida=" + this.getNivelVida()  + ", nivelAlcance=" + nivelAlcance + ", modo=" + modo + '}'+"\n";
+    }
 }

@@ -11,4 +11,9 @@ public class Estructura extends Cartas{
     @Override public int accionCarta() {
         return nivelDefensa+8;
     }
+
+    @Override
+    public String toString() {
+        return "Estructura{" + "nombre=" + this.getNombre() + ", costeElixir=" + this.getCosteElixir() + ", nivelVida=" + this.getNivelVida()  + ", nivelDefensa=" + nivelDefensa + '}'+"\n";
+    }
 }

@@ -11,4 +11,8 @@ public class Tropa extends Cartas{
     @Override public int accionCarta() {
        return nivelAtaque/2;
     }
+    @Override
+    public String toString() {
+        return "Tropa{" + "nombre=" + this.getNombre() + ", costeElixir=" + this.getCosteElixir() + ", nivelVida=" + this.getNivelVida()  + ", nivelAtaque=" + nivelAtaque + '}'+"\n";
+    }
 }
